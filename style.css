@@ -1,4 +1,4 @@
-/*global*/
+/* global */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,7 +8,7 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
 
-/*headrer styling*/
+/* headrer styling */
 .links {
   display: flex;
   justify-content: space-around;
@@ -34,7 +34,7 @@
   border-bottom-right-radius: 30%;
   justify-self: flex-start;
 }
-/*section information styling*/
+/* section information styling */
 .about-me {
   display: flex;
   flex-direction: column;
