@@ -14,17 +14,17 @@
   justify-content: space-around;
 }
 
-.links .nav-bar a {
+.links .nav-bar .nav {
   display: inline-block;
   text-decoration: none;
   margin-left: 20px;
   margin-top: 10px;
   font-size: 20px;
   color: aquamarine;
-  font-family: "Poppins";
+  font-family: "Poppins, monospace";
 }
 
-.links .nav-bar a:hover {
+.links .nav-bar .nav:hover {
   text-decoration: underline;
   color: rgb(18, 68, 68);
 }
@@ -55,7 +55,7 @@
 h2 {
   text-align: center;
   font-size: 30px;
-  font-family: "Poppins";
+  font-family: "Poppins, monospace";
 }
 
 .main-informations h1 {
