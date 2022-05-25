@@ -5,13 +5,7 @@
   box-sizing: border-box;
   background-color: blueviolet;
 }
-
-/*fonts*/
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
-
-/* headrer styling */
-
 .links {
   display: flex;
   justify-content: space-around;
@@ -23,7 +17,7 @@
   margin-top: 10px;
   font-size: 20px;
   color: aquamarine;
-  font-family: "Poppins";
+  font-family: "Poppins:ital";
 }
 .links .nav-bar a:hover {
   text-decoration: underline;
@@ -32,14 +26,11 @@
 .links img {
   padding: 10px;
   background-color: antiquewhite;
-  border: 3px solid #00bbcc;
+  border: 3px solid #0bc;
   border-top-left-radius: 20%;
   border-bottom-right-radius: 30%;
   justify-self: flex-start;
 }
-
-/* section information styling */
-
 .about-me {
   display: flex;
   flex-direction: column;
@@ -55,7 +46,7 @@
 h2 {
   text-align: center;
   font-size: 30px;
-  font-family: "Poppins";
+  font-family: "Poppins:ital";
 }
 .main-informations h1:hover,
 h2:hover {
