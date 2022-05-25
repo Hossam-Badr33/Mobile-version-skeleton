@@ -1,15 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
 /* global */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: blueviolet;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
 .links {
   display: flex;
   justify-content: space-around;
 }
+
 .links .nav-bar a {
   display: inline-block;
   text-decoration: none;
@@ -17,12 +21,14 @@
   margin-top: 10px;
   font-size: 20px;
   color: aquamarine;
-  font-family: "Poppins:ital";
+  font-family: "Poppins";
 }
+
 .links .nav-bar a:hover {
   text-decoration: underline;
   color: rgb(18, 68, 68);
 }
+
 .links img {
   padding: 10px;
   background-color: antiquewhite;
@@ -31,33 +37,40 @@
   border-bottom-right-radius: 30%;
   justify-self: flex-start;
 }
+
 .about-me {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .main-informations {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .main-informations h1,
 h2 {
   text-align: center;
   font-size: 30px;
-  font-family: "Poppins:ital";
+  font-family: "Poppins";
 }
+
 .main-informations h1:hover,
 h2:hover {
   text-decoration: underline;
 }
+
 .main-informations h1 {
   color: rgb(26, 26, 220);
 }
+
 .main-informations h2 {
   color: antiquewhite;
 }
+
 .main-informations p {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -65,43 +78,54 @@ h2:hover {
   align-self: center;
   width: 300px;
 }
+
 .Qualifications {
   align-self: center;
 }
+
 .Qualifications h4 {
   color: chartreuse;
 }
+
 .Qualifications h4:hover {
   text-decoration: underline;
 }
+
 .Qualifications p:hover {
   color: chartreuse;
 }
+
 .languages {
   margin-left: 50px;
   float: left;
 }
+
 .frameworks {
   margin-left: 50px;
 
   float: left;
 }
+
 .skills {
   margin-left: 50px;
   float: left;
 }
+
 .contact {
   text-align: center;
 }
+
 .contact a {
   display: inline-block;
   margin-top: 70px;
   margin-left: 5px;
 }
+
 .contact i {
   background-color: azure;
   border-radius: 5px;
 }
+
 .contact i:hover {
   background-color: rgb(132, 132, 218);
 }
