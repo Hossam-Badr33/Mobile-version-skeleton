@@ -39,7 +39,7 @@
 }
 
 .about-me {
-  display: fmobilelex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -127,4 +127,94 @@ h2:hover {
 
 .contact i:hover {
   background-color: rgb(132, 132, 218);
+}
+
+/* work style */
+
+.work h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  word-spacing: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.work1 img {
+  border-radius: 20%;
+  margin-left: 30px;
+  padding: 10px;
+  background-color: black;
+  cursor: pointer;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.3s ease-in-out;
+}
+.work1 img:hover {
+  transform: scaleX(1.1);
+}
+.work1 article {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+}
+.work1 article h2 {
+  flex: 1;
+}
+.work1 article p {
+  flex: 1;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+}
+.work1 article ul {
+  flex: 1;
+  display: flex;
+  list-style: none;
+}
+.work1 article ul li {
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.work1 article ul li:hover {
+  text-decoration: underline;
+}
+.work1 article button {
+  font-weight: bold;
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  align-self: center;
+  cursor: pointer;
+}
+.work1 article button:hover {
+  background-color: crimson;
+}
+.reverse {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.reverse img {
+  margin-right: -100px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.reverse article {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
