@@ -62,7 +62,7 @@ h2 {
   color: rgb(26, 26, 220);
 }
 
-.main-informations h1:hover,
+.main-informations h1:first-child:hover,
 h2:hover {
   text-decoration: underline;
 }
@@ -139,11 +139,13 @@ h2:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
 }
+
 .work1 img {
   border-radius: 20%;
   margin-left: 30px;
@@ -156,9 +158,11 @@ h2:hover {
   grid-row-end: 2;
   transition: all 0.3s ease-in-out;
 }
+
 .work1 img:hover {
   transform: scaleX(1.1);
 }
+
 .work1 article {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -167,28 +171,34 @@ h2:hover {
   display: flex;
   flex-direction: column;
 }
+
 .work1 article h2 {
   flex: 1;
 }
-.work1 article p {
+
+.work1 article p:first-of-type {
   flex: 1;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: blue;
 }
+
 .work1 article ul {
   flex: 1;
   display: flex;
   list-style: none;
 }
+
 .work1 article ul li {
   margin-left: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
+
 .work1 article ul li:hover {
   text-decoration: underline;
 }
+
 .work1 article button {
   font-weight: bold;
   font-size: 15px;
@@ -198,20 +208,24 @@ h2:hover {
   align-self: center;
   cursor: pointer;
 }
+
 .work1 article button:hover {
   background-color: crimson;
 }
+
 .reverse {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.reverse img {
+
+.reverse img:first-child {
   margin-right: -100px;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
 .reverse article {
   grid-column-start: 1;
   grid-column-end: 2;
