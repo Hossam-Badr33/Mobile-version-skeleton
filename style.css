@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto&display=swap");
+
 /* global */
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: blueviolet;
+}
+
+body {
+  background-image: linear-gradient(0deg, blue, rgb(14, 14, 181));
+  max-width: 600px;
+  margin: auto;
 }
 
 .links {
@@ -14,8 +21,19 @@
   justify-content: space-around;
 }
 
+.links .nav-bar .hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: antiquewhite;
+  margin: 6px 0;
+}
+
+.links .nav-bar .hamburger:hover {
+  background-color: #9490ff;
+}
+
 .links .nav-bar .nav {
-  display: inline-block;
+  display: none;
   text-decoration: none;
   margin-left: 20px;
   margin-top: 10px;
@@ -59,7 +77,7 @@ h2 {
 }
 
 .main-informations h1 {
-  color: rgb(26, 26, 220);
+  color: #7d73fc;
 }
 
 .main-informations h1:first-child:hover,
@@ -72,10 +90,17 @@ h2:hover {
 }
 
 .main-informations p {
+  color: #b3bac5;
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
   text-align: center;
   align-self: center;
+  width: 300px;
+}
+
+hr {
+  border-top: 5px solid #646369;
   width: 300px;
 }
 
@@ -84,7 +109,11 @@ h2:hover {
 }
 
 .Qualifications h4 {
-  color: chartreuse;
+  color: #9490ff;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: Roboto, Verdana, sans-serif;
+  font-size: 12px;
 }
 
 .Qualifications h4:hover {
@@ -100,6 +129,16 @@ h2:hover {
   float: left;
 }
 
+.languages p,
+.frameworks p,
+.skills p {
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto, Verdana, sans-serif;
+  font-size: 15px;
+  color: #f5f5ff;
+}
+
 .frameworks {
   margin-left: 50px;
   float: left;
@@ -107,7 +146,7 @@ h2:hover {
 
 .skills {
   margin-left: 50px;
-  float: left;
+  margin-top: 100px;
 }
 
 .contact {
@@ -136,13 +175,35 @@ h2:hover {
   margin: auto;
 }
 
-.work .recent {
-  text-align: left;
-  font-size: 30px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.work .arrow {
+  margin-top: 50px;
+  color: #a2a3ae;
+  text-align: center;
+}
+
+.arrow i,
+.arrow h4 {
+  display: inline-block;
+}
+
+.arrow h4 {
+  font-weight: 500;
+  line-height: 32px;
+  font-family: Roboto, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.work h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490ff;
+  font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   word-spacing: 5px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 124px;
+  width: 360px;
+  margin-top: 20px;
 }
 
 .work h2 {
@@ -151,20 +212,16 @@ h2:hover {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .work1 img {
-  border-radius: 20%;
-  margin-left: -30px;
   padding: 10px;
-  background-color: black;
   cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  justify-self: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -173,38 +230,47 @@ h2:hover {
 }
 
 .work1 article {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
   display: flex;
   flex-direction: column;
 }
 
 .work1 article h2 {
   flex: 1;
+  align-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: -15px;
 }
 
 .work1 article p:first-of-type {
   flex: 1;
-  font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: blue;
+  flex-basis: 150px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 20px;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  color: #dcdce8;
 }
 
 .work1 article ul {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   list-style: none;
 }
 
 .work1 article ul li {
-  margin-left: 10px;
-  font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
 }
 
 .work1 article ul li:hover {
@@ -212,13 +278,17 @@ h2:hover {
 }
 
 .work1 article button {
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 24px;
   width: 100px;
   height: 50px;
   border-radius: 10px;
-  align-self: center;
+  align-self: flex-start;
   cursor: pointer;
+  color: #edecff;
+  background-color: #7d73fc;
 }
 
 .work1 article button:hover {
@@ -231,17 +301,11 @@ h2:hover {
 }
 
 .reverse img:first-child {
-  margin-right: -66px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .reverse article {
-  max-width: 200px;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
