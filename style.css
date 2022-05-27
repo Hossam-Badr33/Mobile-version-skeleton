@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto&display=swap");
 
 /* global */
@@ -78,6 +77,19 @@ h2 {
 
 .main-informations h1 {
   color: #7d73fc;
+}
+
+.work h1:first-of-type {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490ff;
+  font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  word-spacing: 5px;
+  height: 124px;
+  width: 360px;
+  margin-top: 20px;
 }
 
 .main-informations h1:first-child:hover,
@@ -191,19 +203,6 @@ hr {
   line-height: 32px;
   font-family: Roboto, Verdana, sans-serif;
   font-size: 20px;
-}
-
-.work h1:first-of-type {
-  text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  color: #9490ff;
-  font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  word-spacing: 5px;
-  height: 124px;
-  width: 360px;
-  margin-top: 20px;
 }
 
 .work h2 {
